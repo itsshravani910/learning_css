@@ -16,7 +16,7 @@
                 height: 200px;
                 width: 200px;
                 display: flex;
-                justify-content: center;
+                justify-content:center;
                 align-items: center;
                 font-size: 30px;
                 transition:transform 3s ease;
@@ -53,8 +53,8 @@
 
             }
             .img-wrapper{
-                width: 300px;
-                height: auto250px;
+                width: 100px;
+                height: 100px;
                 border: 2px solid red;
                 position: relative;
                 overflow: hidden;
@@ -65,11 +65,20 @@
                 transition: 3s;
             }
             .inner-img:hover{
-                transform: scale(1,5);
+                transform: rotate(720deg);
             }
+            
         </style>
     </head>
     <body>
+        <div class="img-wrapper">
+             <img class="inner-img" src="images/img3.jpg" style="width: 100px; height: 100px;" />
+             
+
+        </div>
+
+
+
         <div class="container">
             <div class="box box1">Translate x & y</div>
              <div class="box box2">Translate X</div>
@@ -84,8 +93,7 @@
 
 
 
-        <div class="img-wrapper">
-         
+       
         
     </body>
 </html>

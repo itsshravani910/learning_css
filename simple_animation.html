@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </title>Document</title>
+    <style>
+        .simple_animation{
+            width: 100px;
+            height: 100px; 
+            background-color: yellow;
+            
+            position: relative;
+            animation: shravani;
+            -webkit-animation: shravani;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+            animation-delay: 3s;
+
+        }
+
+        @keyframes shravani{
+0%{background-color: yellow;left: 0px;top: 0px;}
+25%{background-color:red;left: 300px;top: 0px;}
+50%{background-color:blue;left: 300px;top: 300px;}
+75%{background-color:blueviolet;left: 0px;top: 300px;}
+100%{background-color: yellow;left: 0px;top: 0px;}
+        }  
+    </style>
+</head>
+<body>
+    <div class="simple_animation"></div>
+</body>
+</html>

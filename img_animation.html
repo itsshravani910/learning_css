@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .simple_animation {
+      width: 100px;
+      height: 100px;
+      
+       background-image: url(images/IT.jpeg );
+      /* Initial image */
+      background-size: cover;
+      position: relative;
+      animation: shravani 20s infinite reverse;
+      animation-delay: 3s;
+    }
+
+    @keyframes shravani {
+      0% {
+        background-image: url(images/img3.jpg);
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+        background-image: url(images/img4.jpg);
+        left: 300px;
+        top: 0px;
+      }
+      50% {
+        background-image: url(images/img3.jpg);
+        left: 300px;
+        top: 300px;
+      }
+      75% {
+        background-image: url(images/img4.jpg);
+        left: 0px;
+        top: 300px;
+      }
+      100% {
+        background-image: url(images/img3.jpg);
+        left: 0px;
+        top: 0px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="simple_animation"></div>
+</body>
+</html>
+ 
